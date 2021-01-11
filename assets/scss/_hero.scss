@@ -1,0 +1,8 @@
+.hero {
+    background-image: url("./images/hero_bg.png");
+    @include bgFull;
+    height: 100vh;
+    &__title {
+        font-size: 6rem;
+    }
+}

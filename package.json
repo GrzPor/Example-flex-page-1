@@ -1,0 +1,35 @@
+{
+    "name": "example-flexbox-page",
+    "version": "1.0.0",
+    "description": "simple page too practise css flexbox ",
+    "main": "index.js",
+    "scripts": {
+        "test": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/GrzPor/Example-flex-page-1.git"
+    },
+    "keywords": [
+        "html",
+        "css",
+        "scss",
+        "flexbox",
+        "gulp"
+    ],
+    "author": "grzegorzporadko@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/GrzPor/Example-flex-page-1/issues"
+    },
+    "homepage": "https://github.com/GrzPor/Example-flex-page-1#readme",
+    "devDependencies": {
+        "browser-sync": "^2.26.13",
+        "cssnano": "^4.1.10",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.1.0"
+    }
+}
