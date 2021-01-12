@@ -4,3 +4,26 @@ html {
         family: $font;
     }
 }
+.alert {
+    font-size: 1.3rem;
+    color: $white;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 10px 0;
+    display: none;
+    &__error {
+        background-color: #a75959;
+    }
+    &__success {
+        background-color: #2d762d;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+}
+.valid {
+    border: 1px solid green;
+}
+.invalid {
+    border: 1px solid red;
+}

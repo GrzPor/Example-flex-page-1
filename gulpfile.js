@@ -9,7 +9,8 @@ const config = {
     app: {
         scss: "./assets/scss/**/*.scss",
         images: "./assets/images/*.*",
-        html: "./assets*.html",
+        js: "./assets/js/*.js",
+        html: "./assets/*.html",
     },
     dist: {
         base: "./dist/",
@@ -30,6 +31,11 @@ function imagesTask(done) {
     done();
 }
 
+function jsTask(done) {
+    src(config.app.js).pipe(dest(config.dist.base));
+    done();
+}
+
 function templateTask(done) {
     src(config.app.html).pipe(dest(config.dist.base));
     done();
@@ -38,6 +44,7 @@ function templateTask(done) {
 function watchFiles() {
     watch(config.app.scss, series(cssTask, reload));
     watch(config.app.images, series(imagesTask, reload));
+    watch(config.app.js, series(jsTask, reload));
     watch(config.app.html, series(templateTask, reload));
 }
 
@@ -59,11 +66,5 @@ function cleanUp() {
     return del([config.dist.base]);
 }
 
-exports.dev = parallel(
-    cssTask,
-    imagesTask,
-    templateTask,
-    watchFiles,
-    liveReload
-);
-exports.build = series(cleanUp, parallel(cssTask, imagesTask, templateTask));
+exports.dev = parallel(cssTask, imagesTask, jsTask, templateTask, watchFiles, liveReload);
+exports.build = series(cleanUp, parallel(cssTask, imagesTask, jsTask, templateTask));
