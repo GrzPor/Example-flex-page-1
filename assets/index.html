@@ -8,16 +8,118 @@
     </head>
     <body>
         <main>
-            <section class="hero">
+            <section class="hero center-xy">
                 <h1 class="hero__title">There is no other platforms for you as like</h1>
-                <p>qwe 3</p>
+                <div class="hero__play center-xy">
+                    <a class="hero__play-icon" href="#"></a>
+                </div>
+                <div class="hero__cta">
+                    <a class="hero__btn" href="">try now</a>
+                    <p>* No need to add cards details</p>
+                </div>
+            </section>
+            <section class="traingle">
+                <div class="traingle__content">
+                    <div class="traingle__wrapper">
+                        <p class="section-category">New design</p>
+                        <h2 class="section-title">There is no other platforms for you as like</h2>
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi vero enim exercitationem itaque quaerat ullam
+                            distinctio rerum, illo vitae qui perferendis. Dolore, minima modi? Explicabo fugit ab nemo adipisci?
+                        </p>
+                    </div>
+                </div>
+                <div class="traingle__shape"></div>
+            </section>
+            <section class="features">
+                <p class="section-category">New features</p>
+                <h2 class="section-title">Some awesome features</h2>
+                <div class="features__wrapper">
+                    <div class="features__item">
+                        <img src="./images/features_picture.png" alt="Pictures" />
+                        <p class="features__name">Some awesome features</p>
+                        <p class="features__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, cupiditate!</p>
+                    </div>
+                    <div class="features__item">
+                        <img src="./images/features_airplane.png" alt="Airplane" />
+                        <p class="features__name">Some awesome features</p>
+                        <p class="features__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, cupiditate!</p>
+                    </div>
+                    <div class="features__item">
+                        <img src="./images/features_bulb.png" alt="Bulb" />
+                        <p class="features__name">Some awesome features</p>
+                        <p class="features__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, cupiditate!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="responsive">
+                <div class="resposive__shape">
+                    <img src="./images/macbook.png" alt="Laptop" />
+                </div>
+                <div class="responsive__content">
+                    <div class="responsive__wrapper">
+                        <p class="section-category">New design</p>
+                        <h2 class="section-title">Resposive design, just need your tap</h2>
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi vero enim exercitationem itaque quaerat ullam
+                            distinctio rerum, illo vitae qui perferendis. Dolore, minima modi? Explicabo fugit ab nemo adipisci?
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="clients">
+                <div class="clients__testimonials">
+                    <div class="clients__item">
+                        <div class="clients__placeholder"></div>
+                        <div class="clients__name">James Doe</div>
+                        <div class="clients__position">CEO</div>
+                        <div class="clients__opinion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in veritatis, atque alias praesentium cum.
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <div class="clients__placeholder"></div>
+                        <div class="clients__name">James Doe</div>
+                        <div class="clients__position">CEO</div>
+                        <div class="clients__opinion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in veritatis, atque alias praesentium cum.
+                        </div>
+                    </div>
+                    <div class="clients__item">
+                        <div class="clients__placeholder"></div>
+                        <div class="clients__name">James Doe</div>
+                        <div class="clients__position">CEO</div>
+                        <div class="clients__opinion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in veritatis, atque alias praesentium cum.
+                        </div>
+                    </div>
+                </div>
+                <div class="clients__logos">
+                    <img src="./images/partner_1.png" alt="#" />
+                    <img src="./images/partner_2.png" alt="#" />
+                    <img src="./images/partner_3.png" alt="#" />
+                    <img src="./images/partner_4.png" alt="#" />
+                    <img src="./images/partner_5.png" alt="#" />
+                </div>
+            </div>
+            <section class="browser">
+                <div class="browser__content">
+                    <p class="section-category">New features</p>
+                    <h2 class="section-title">Some awesome features</h2>
+                    <p class="section-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi vero enim exercitationem itaque quaerat ullam
+                        distinctio rerum, illo vitae qui perferendis. Dolore, minima modi? Explicabo fugit ab nemo adipisci?
+                    </p>
+                </div>
+                <img src="./images/browser_window.png" alt="Browser" />
             </section>
             <section class="contact">
-                <h2>New features</h2>
+                <p class="section-category">New features</p>
+                <h2 class="section-title section-title--white">Over 1000 designers are using...</h2>
                 <form class="contact__form" action="" novalidate>
-                    <input type="text" data-error-msg="Fill full name field" placeholder="Full name" required />
-                    <input type="email" data-error-msg="Fill email field" placeholder="Email" required />
-                    <input type="password" data-error-msg="Fill password field" placeholder="Password" required />
+                    <input class="contact__field" type="text" data-error-msg="Fill full name field" placeholder="Full name" required />
+                    <input class="contact__field" type="email" data-error-msg="Fill email field" placeholder="Email" required />
+                    <input class="contact__field" type="password" data-error-msg="Fill password field" placeholder="Password" required />
                     <button type="submit">Try now</button>
                     <div class="alert alert__error">
                         <ol></ol>
@@ -26,8 +128,10 @@
                         <p>Formularz wysłany poprawnie</p>
                     </div>
                 </form>
+                <p>By Signing up you agree to our <a href="#" target="_blank">terms & Services</a>.</p>
             </section>
         </main>
+        <footer class="footer"></footer>
         <script type="text/javascript" src="./index.js"></script>
     </body>
 </html>

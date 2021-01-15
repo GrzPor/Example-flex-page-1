@@ -1,0 +1,38 @@
+.features {
+    padding: 140px 0 180px;
+    background-image: url("./images/features_bg.png");
+    @include bgFull;
+    text-align: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 90px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 360px;
+        img {
+            width: 67px;
+            height: 67px;
+            margin: 0 auto;
+        }
+    }
+    &__name {
+        font: {
+            size: 2.2rem;
+            weight: 500;
+        }
+        color: $content-dark;
+    }
+    &__desc {
+        font: {
+            size: 1.6rem;
+            weight: 500;
+        }
+        color: $content-light;
+        margin: 0;
+    }
+}

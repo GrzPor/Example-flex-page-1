@@ -2,7 +2,41 @@ html {
     font: {
         size: 62.5%;
         family: $font;
+        weight: 400;
     }
+}
+body {
+    margin: 0;
+}
+.section-category {
+    font: {
+        size: 1.6rem;
+        weight: 500;
+    }
+    color: $pink-light;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 5px;
+}
+.section-title {
+    font: {
+        size: 4rem;
+        weight: 500;
+    }
+    color: $content-dark;
+    margin: 0 0 30px;
+    &--white {
+        color: $white;
+    }
+}
+.section-text {
+    font: {
+        size: 1.6rem;
+        weight: 500;
+    }
+    line-height: 25px;
+    color: $content-light;
+    margin: 0 0 40px;
 }
 .alert {
     font-size: 1.3rem;
@@ -26,4 +60,9 @@ html {
 }
 .invalid {
     border: 1px solid red;
+}
+.center-xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

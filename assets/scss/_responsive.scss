@@ -1,0 +1,13 @@
+.responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    &__shape {
+    }
+    &__content {
+    }
+    &__wrapper {
+        max-width: 500px;
+    }
+}
