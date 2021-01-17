@@ -2,6 +2,7 @@
     padding: 140px 0 180px;
     background-image: url("./images/features_bg.png");
     @include bgFull;
+    background-attachment: fixed;
     text-align: center;
     &__wrapper {
         display: flex;

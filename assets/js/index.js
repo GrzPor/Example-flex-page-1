@@ -3,8 +3,8 @@
         this.form = form;
         this.fields = this.form.querySelectorAll("[required]");
         this.errors = [];
-        this.errorsList = this.form.querySelector(".alert__error ol");
-        this.successMsg = this.form.querySelector(".alert__success");
+        this.errorsList = this.form.parentNode.querySelector(".alert__error ol");
+        this.successMsg = this.form.parentNode.querySelector(".alert__success");
 
         if (!this.fields.length) return;
 

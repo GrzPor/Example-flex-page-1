@@ -9,8 +9,7 @@
         margin: 0 auto;
     }
     &__shape {
-        background-color: #ececec;
         flex: 1 1 100%;
-        position: relative;
+        background: linear-gradient(to bottom right, #ececec 0%, #ececec 50%, $pink-light 50%, $pink-light 100%);
     }
 }

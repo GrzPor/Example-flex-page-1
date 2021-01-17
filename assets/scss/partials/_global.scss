@@ -8,6 +8,11 @@ html {
 body {
     margin: 0;
 }
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .section-category {
     font: {
         size: 1.6rem;
@@ -39,27 +44,31 @@ body {
     margin: 0 0 40px;
 }
 .alert {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: $white;
     border-radius: 5px;
     padding: 10px 40px;
     margin: 10px 0;
     display: none;
+    text-align: left;
     &__error {
-        background-color: #a75959;
+        background-color: $error;
     }
     &__success {
-        background-color: #2d762d;
+        background-color: $success;
+    }
+    ol {
+        padding-left: 0;
     }
     li {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 }
 .valid {
-    border: 1px solid green;
+    border: 1px solid $success !important;
 }
 .invalid {
-    border: 1px solid red;
+    border: 1px solid $error !important;
 }
 .center-xy {
     display: flex;
