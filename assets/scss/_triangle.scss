@@ -1,0 +1,15 @@
+.traingle {
+    display: flex;
+    &__content {
+        padding: 170px 0;
+        flex: 1 1 100%;
+    }
+    &__wrapper {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    &__shape {
+        flex: 1 1 100%;
+        background: linear-gradient(to bottom right, #ececec 0%, #ececec 50%, $pink-light 50%, $pink-light 100%);
+    }
+}

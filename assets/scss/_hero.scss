@@ -1,0 +1,41 @@
+.hero {
+    background-image: url("./images/hero_bg.png");
+    @include bgFull;
+    height: 100vh;
+    flex-direction: column;
+    &__title {
+        font: {
+            size: 6rem;
+            weight: 100;
+        }
+        max-width: 700px;
+        text-align: center;
+        margin-bottom: 60px;
+        color: $content-dark;
+    }
+    &__play {
+        background-color: $ash;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+    &__play-icon {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 20px solid $white;
+    }
+    &__cta {
+        p {
+            font-size: 1.4rem;
+            color: $content-light;
+        }
+    }
+    &__btn {
+        @include button;
+        margin-bottom: 20px;
+        display: block;
+    }
+}

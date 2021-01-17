@@ -1,0 +1,26 @@
+@mixin bgFull {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin button {
+    text: {
+        transform: uppercase;
+        align: center;
+        decoration: none;
+    }
+    font: {
+        size: 1.6rem;
+        weight: 400;
+    }
+    padding: 15px;
+    border-radius: 4px;
+    border: 0;
+    color: $white;
+    background-color: $pink-light;
+    letter-spacing: 2px;
+    &:focus {
+        outline: 0;
+    }
+}

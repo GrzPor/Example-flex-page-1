@@ -1,0 +1,39 @@
+.contact {
+    padding: 90px 0;
+    background-color: $dark-blue;
+    text-align: center;
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 100px 0 50px;
+    }
+    &__field {
+        width: 250px;
+        padding: 15px 30px;
+        box-sizing: border-box;
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 3px;
+        background-color: rgba($white, 0.2);
+        &:focus {
+            outline: 0;
+        }
+        &::placeholder {
+            text-transform: uppercase;
+            color: inherit;
+        }
+    }
+    button {
+        @include button;
+        width: 250px;
+    }
+    &__terms {
+        font-size: 1.6rem;
+        color: $content-light;
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}

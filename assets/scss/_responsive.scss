@@ -1,0 +1,18 @@
+.responsive {
+    display: flex;
+    &__shape {
+        flex: 1 1 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom left, #ececec 0%, #ececec 50%, $pink-light 50%, $pink-light 100%);
+    }
+    &__content {
+        padding: 170px 0;
+        flex: 1 1 100%;
+    }
+    &__wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
